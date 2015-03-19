@@ -1,5 +1,6 @@
 package statustwitter;
 
+import javax.swing.JOptionPane;
 import twitter4j.Query;
 import twitter4j.QueryResult;
 import twitter4j.Status;
@@ -18,7 +19,7 @@ public class StatusTwitter {
      * @throws twitter4j.TwitterException
      */
     public static void main(String[] args) throws TwitterException {
-     
+        JOptionPane.showMessageDialog(null, "Creando conflicto");
         Twitter mitwitter = new TwitterFactory().getInstance();
  
         Query query = new Query("#Cangas");
